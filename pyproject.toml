@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "xcontacts"
+version = "0.1.0"
+description = ""
+authors = ["darknet-lord"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+nicegui = "^1.2.10"
+sqlalchemy = "^2.0.12"
+alembic = "^1.10.4"
+robotframework = "^6.0.2"
+selenium = "^4.9.0"
+robotframework-seleniumlibrary = "^6.1.0"
+black = "^23.3.0"
+pydantic = "^1.10.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
